@@ -3,15 +3,7 @@
   "version": "0.1.0",
   "private": true,
 
-  /*  👇  add this line */
   "homepage": "https://shivam4552.github.io/google-landing",
-
-  "description": "This project was bootstrapped with Create React App.",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-
-  /*  If you call a local backend while developing, keep the proxy. */
   "proxy": "http://localhost:3001",
 
   "scripts": {
@@ -19,8 +11,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
-    /*  👇  GitHub Pages helper scripts  */
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -40,13 +30,11 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.0.0",      /* rename “tailwind” → “tailwindcss” */
-    "gh-pages": "^6.0.0"          /*  👈  new */
+    "tailwindcss": "^4.0.0",
+    "gh-pages": "^6.0.0"
   },
 
-  "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
-  },
+  "eslintConfig": { "extends": ["react-app", "react-app/jest"] },
 
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
