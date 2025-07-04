@@ -2,6 +2,29 @@
   "name": "google-landing",
   "version": "0.1.0",
   "private": true,
+
+  /*  👇  add this line */
+  "homepage": "https://shivam4552.github.io/google-landing",
+
+  "description": "This project was bootstrapped with Create React App.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  /*  If you call a local backend while developing, keep the proxy. */
+  "proxy": "http://localhost:3001",
+
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+
+    /*  👇  GitHub Pages helper scripts  */
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -13,38 +36,20 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwind": "^4.0.0"
+    "tailwindcss": "^4.0.0",      /* rename “tailwind” → “tailwindcss” */
+    "gh-pages": "^6.0.0"          /*  👈  new */
   },
-  "proxy": "http://localhost:3001",
-  "description": "This project was bootstrapped with Create React App.",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
+  },
+
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
 }
